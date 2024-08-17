@@ -1,0 +1,11 @@
+api/__pycache__/
+api/migrations/__pycache__/
+api/models/__pycache__/
+api/Serializers/__pycache__/
+api/view/__pycache__/
+backend/__pycache__/
+env/
+frontend/__pycache__/
+frontend/node_modules/
+frontend/static/
+db.sqlite3/
