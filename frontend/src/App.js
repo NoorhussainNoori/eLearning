@@ -13,7 +13,6 @@ const App = () => {
     }
   })
   return (
-    
     <ThemeProvider theme={theme}>
       <Navbar />
       <Box marginTop={4} marginBottom={4}>
