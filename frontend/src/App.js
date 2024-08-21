@@ -2,7 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import { Box, createTheme, ThemeProvider } from "@mui/material";
 import '@fontsource/poppins';
-import Nav from "./Components/layout/Navbar/Nav";
+import Navbar from "./Components/layout/Navbar/Nav";
 const App = () => {
   const theme = createTheme({
     typography: {
@@ -15,8 +15,8 @@ const App = () => {
   return (
     
     <ThemeProvider theme={theme}>
-      <Nav />
-      <Box marginTop={15} marginBottom={15}>
+      <Navbar />
+      <Box marginTop={4} marginBottom={4}>
         <Outlet />
       </Box>
     </ThemeProvider>
