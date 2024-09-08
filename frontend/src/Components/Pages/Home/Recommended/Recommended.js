@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   Box,
   Container,
@@ -18,7 +18,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function Recommended() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const courses = [
     {
       title: "Introduction to Web Development",
@@ -93,10 +93,9 @@ export default function Recommended() {
     ],
   };
 
-
-  const handleExploreButton = ()=>{
-    navigate('/courses')
-  }
+  const handleExploreButton = () => {
+    navigate("/courses");
+  };
 
   return (
     <Grid container>
@@ -186,7 +185,9 @@ export default function Recommended() {
         justifyContent={"center"}
         alignItems={"center"}
       >
-        <Button onClick={handleExploreButton} variant="contained">Explore more</Button>
+        <Button onClick={handleExploreButton} variant="contained">
+          Explore more
+        </Button>
       </Grid>
     </Grid>
   );
